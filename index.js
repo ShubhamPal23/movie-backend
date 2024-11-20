@@ -4,9 +4,7 @@ import connectDB from "./db/connection.js";
 import cors from 'cors';
 const app = express();
 const port = 3000;
-app.use(cors({
-    origin: 'https://glowing-swan-31eb1f.netlify.app/',
-}));
+app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
 connectDB()
