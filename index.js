@@ -35,6 +35,5 @@ app.use((request, response, next) => {
   response.status(404).json({ message: "ERROR 404 >>>>NOT FOUND" });
 });
 app.listen(port, () => {
-    console.log("Server is running on port", port);
-});
-
+    console.log("Server is running on 3000")
+})
