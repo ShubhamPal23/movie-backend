@@ -1,6 +1,5 @@
 import EmployeeModel from "../db/models/Employee.js";
 import { hashing } from "../utils/encrypt.js";
-import jwt from 'jsonwebtoken';
 
 export const controller = {
   async login(req, res) {
